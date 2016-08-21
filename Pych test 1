@@ -1,0 +1,29 @@
+class Boat():
+    tonnage=0
+    name=""
+    isdocked=True
+
+    def dock(self):
+        if isDocked:
+            print("You are already docked.")
+        else:
+            isdocked=True
+            print("Docking")
+
+    def undock(self):
+        if not(isDocked):
+            print("You aren't docked.")
+        else:
+            isDocked=True
+            print("Undocking")
+
+class Submarine(Boat):
+
+
+enterprise2=Boat()
+enterprise2.name="Enterprise II"
+enterprise2.tonnage=25
+
+enterprise3=Boat()
+enterprise3.name="EnterpriseIII"
+enterprise3.tonnage=135

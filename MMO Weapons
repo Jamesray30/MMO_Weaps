@@ -1,0 +1,43 @@
+class weapon():
+    colour=""
+    name=""
+    Weight=0
+    isDrawn=True
+
+    def draw(self):
+        if isDrawn:
+            print("You have already Drawn")
+        else:
+            isDrawn=True
+            print("Drawing")
+
+    def sheathe(self):
+        if not(isDrawn):
+            print("You have not Drawn")
+        else:
+            isDrawn=True
+            print"Sheathing"
+
+class Crossbow(weapon):
+    def load(self):
+        print("loading crossbow!")
+
+class Longbow(weapon):
+    def aim(self):
+        print("aiming longbow")
+
+Doomhammer=weapon()
+Doomhammer.colour="Black"
+Doomhammer.Weight=10kg
+
+Frostmourne=weapon()
+Frostmourne.colour="Blue"
+Frostmourne.Weight=15kg
+
+Warpwood Launcher=Longbow()
+Warpwood Launcher.colour="Yellow"
+Warpwood Launcher.Weight=8kg
+
+Snipe=Crossbow()
+Snipe.colour="brown"
+Snipe.Weight=9kg
